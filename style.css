@@ -90,6 +90,27 @@ header p {
   opacity: 0.8;
 }
 
+.download-button {
+  display: inline-block;
+  margin-top: 1.2rem;
+  padding: 0.8rem 1.4rem;
+  color: #4a0f0f;
+  background: var(--secondary);
+  border: 1px solid var(--primary);
+  border-radius: 999px;
+  box-shadow: 0 0 12px var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.download-button:hover,
+.download-button:focus-visible {
+  background: #fff0ef;
+  box-shadow: 0 0 20px var(--primary);
+  transform: translateY(-2px);
+}
+
 main {
   max-width: 1000px;
   margin: 0.5rem auto;
