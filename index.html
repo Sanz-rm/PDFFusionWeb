@@ -11,49 +11,67 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <img
-        src="assets/PDFFusion_Logo.png"
-        alt="PDFFusion"
-        class="logo"
-      />
-      <h1>PDFFusion</h1>
-       <p>
-         Organiza y fusiona tus ficheros en un único PDF.
-       </p>
-       <a class="download-button" href="downloads/PDFFusionInstaller.msi" download>
-         Descargar PDFFusion
-       </a>
-     </header>
+    <header class="site-header">
+      <nav class="navigation" aria-label="Navegación principal">
+        <a class="brand" href="#inicio" aria-label="PDFFusion, inicio">
+          <img src="assets/PDFFusion_Logo.png" alt="" class="brand-logo" />
+          <span>PDFFusion</span>
+        </a>
+        <a href="#demo">Ver demostración</a>
+      </nav>
+
+      <div class="hero" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow">GESTIÓN DE DOCUMENTOS</p>
+          <h1>Fusiona documentos, sin complicaciones.</h1>
+          <p class="hero-description">
+            Reúne tus PDF e imágenes, ordénalos a tu manera y crea un único documento listo para compartir.
+          </p>
+          <div class="hero-actions">
+            <a class="download-button" href="downloads/PDFFusionInstaller.msi" download>
+              Descargar para Windows
+            </a>
+            <span class="download-note">Instalador MSI</span>
+          </div>
+        </div>
+        <div class="hero-panel" aria-hidden="true">
+          <div class="document document-back"></div>
+          <div class="document document-front">
+            <span></span><span></span><span></span>
+            <strong>PDF</strong>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <main>
       <section id="about">
-        <h2>¿Cómo funciona?</h2>
-        <p>
-          PDFFusion es una aplicación diseñada para que puedas seleccionar diferentes archivos PDF e imágenes desde una carpeta.
+        <p class="section-label">UN FLUJO SENCILLO</p>
+        <h2>Todo lo que necesitas para preparar un PDF.</h2>
+        <p class="section-intro">
+          Selecciona archivos desde cualquier carpeta, establece su orden y unifícalos en un único documento.
         </p>
-        <p>
-          Podras unificarlos en un único PDF y configurar el orden de los archivos para definir cómo se mostrarán en el documento.
-        </p>
-
       </section>
 
       <section id="advantages">
-        <h2>Ventajas</h2>
         <div class="features">
           <div class="feature-card">
+            <span class="feature-number">01</span>
             <h3>Selección múltiple</h3>
             <p>Elige varios archivos PDF o imágenes de cualquier carpeta de tu equipo.</p>
           </div>
           <div class="feature-card">
+            <span class="feature-number">02</span>
             <h3>Reordenar fácil</h3>
             <p>Selecciona y ordena los archivos para definir el flujo de tu documento.</p>
           </div>
           <div class="feature-card">
+            <span class="feature-number">03</span>
             <h3>Fusión inmediata</h3>
             <p>Combina todos los archivos en un único PDF con un solo clic.</p>
           </div>
           <div class="feature-card">
+            <span class="feature-number">04</span>
             <h3>Contacto</h3>
             <p>Formulario para sugerencias y mejoras.</p>
           </div>
@@ -61,7 +79,8 @@
       </section>
 
       <section id="technologies">
-        <h2>Tecnologías empleadas</h2>
+        <p class="section-label">CONSTRUIDO CON</p>
+        <h2>Tecnología fiable.</h2>
         <div class="tech-icons">
           <img src="assets/icono-vs2022.png" alt="Visual Studio 2022" title="Visual Studio 2022" />
           <img src="assets/icono-.net.png" alt=".NET" title=".NET" />
@@ -70,8 +89,9 @@
         </div>
       </section>
 
-      <section>
-        <h2 class="title-demo">Demo de la aplicación</h2>
+      <section id="demo">
+        <p class="section-label">CONOCE LA APLICACIÓN</p>
+        <h2 class="title-demo">Así de sencillo.</h2>
         <div class="video-container">
           <iframe
             src="https://www.youtube.com/embed/iEqgco6SyIk?si=7FyQsDewt96rtNaV"
